@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Aptitute Quiz</string>
+    <string name="link"><a href="">Register</a></string>
+    <string name="link2"><a href="">Sign Up</a></string>
+</resources>

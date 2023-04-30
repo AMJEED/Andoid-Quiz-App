@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="451dp"
+        android:layout_height="249dp"
+        android:background="@drawable/bg"
+        android:gravity="center">
+
+        <TextView
+
+            android:id="@+id/john"
+            android:layout_width="151dp"
+            android:layout_height="62dp"
+            android:fontFamily="@font/opensansextrabold"
+            android:text="Register"
+            android:textColor="#ffffff"
+            android:textSize="34dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:drawableLeft="@drawable/icon"
+        android:id="@+id/usname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="username"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="204dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/lock"
+        android:layout_margin="20dp"
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+
+        android:hint="password"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <EditText
+        android:drawableLeft="@drawable/mail"
+        android:layout_margin="20dp"
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+
+        android:hint="Email"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+    <Button
+        android:layout_margin="20dp"
+        android:id="@+id/btn_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:width="227dp"
+        android:height="60dp"
+        android:backgroundTint="#006793"
+        android:fontFamily="@font/opensansextrabold"
+        android:text="register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? " />
+
+        <TextView
+
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/link2" />
+    </LinearLayout>
+
+
+</LinearLayout>
